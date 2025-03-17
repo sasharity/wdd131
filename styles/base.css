@@ -1,0 +1,111 @@
+/* Base Styles */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: white
+} */
+
+/* Header Styling */
+/* header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+} */
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    color: #f4a261;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+main {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    padding: 20px;
+}
+
+/* Style the section boxes */
+.cards {
+    flex: 1/2; 
+    max-width: 48%; 
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px; 
+    
+}
+
+.cards h1, h2 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+.cards p{
+    color: black;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+}
+.hero {
+    color: dark gray;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+main p {
+    
+}
+
+main p2 {
+    color: black;
+    padding: 20px;
+    text-align: right;
+    display: flex;
+    
+}
+
+main img {
+    width: 150px;
+    float: inline-start;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
