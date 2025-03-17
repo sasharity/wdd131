@@ -8,12 +8,12 @@
 } */
 
 /* Header Styling */
-/* header {
+header {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
-} */
+}
 
 /* Navigation Styling */
 nav {
@@ -50,15 +50,16 @@ main {
 
 /* Style the section boxes */
 .cards {
-    flex: 1/2; 
-    max-width: 48%; 
+    flex: 2/1; 
+    max-width: 65%; 
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px; 
     
 }
 
-.cards h1, h2 {
+
+.cards h2,h3 {
     background-color: black;
     color: white;
     padding: 10px;
@@ -75,16 +76,13 @@ main {
     display: flex;
 }
 .hero {
-    color: dark gray;
+    color: gray;
     padding: 20px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: underline;
 }
 
-main p {
-    
-}
 
 main p2 {
     color: black;
