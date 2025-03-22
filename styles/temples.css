@@ -37,6 +37,12 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+nav ul li a:hover {
+    color: white; 
+    background-color: #007BFF; 
+    padding: 5px 10px; 
+    border-radius: 5px;
+}
 
 main {
     max-width: 800px;
