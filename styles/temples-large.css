@@ -1,0 +1,19 @@
+@media only screen and (min-width: 512px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #menu-toggle {
+        display: none; 
+    }
+
+    .gallery {
+        display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); grid-gap: 25px;place-items: center;
+        
+    }
+    figure {
+        padding: 15px;
+    }
+}
