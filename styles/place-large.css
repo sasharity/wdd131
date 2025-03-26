@@ -40,3 +40,12 @@
         text-align: right;
     }
 }
+.weather h3::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("images/weather-icon.svg") no-repeat center;
+    background-size: contain;
+    margin-left: 10px;
+}

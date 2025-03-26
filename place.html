@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A page showcasing information about Nigeria with weather details and a hero image.">
+    <meta name="description" content="A page showcasing information about Nigeria with weather details and some images.">
     <meta name="author" content="Iruoghene Sasha Omarayeirue">
     <title>My Place</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="styles/place-large.css"> 
     <script src="scripts/place.js" defer></script> 
     <script src="scripts/getdates.js" defer></script>
+</head>
 <body>
 
     <header>
-        <h1>Welcome to Nigeria</h1>
-        
+        <h1>Welcome to Nigeria</h1>  
     </header>
     
     <main>
@@ -40,7 +40,9 @@
                     </ul>
                 </div>
                 <div class="weather">
-                    <h3>Weather <span class="weather-icon">⛅</span></h3>
+                    <h3>Weather
+                        <img src="images/weather-icon.svg+xml" alt="Weather icon">
+                    </h3>
                     <p><strong>Temperature:</strong> <span id="temperature">30</span>°C</p>
                     <p><strong>Wind Speed:</strong> <span id="windSpeed">10</span> km/h</p>
                     <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
