@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Dynamic footer year update
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = document.lastModified;
 
