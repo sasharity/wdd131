@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A product review form for customers">
+    <meta name="author" content="Iruoghene Omarayeirue">
+    <title>Product Review Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css"> 
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script> 
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <form id="review-form" action="review.html" method="get">
+        <fieldset>
+            <legend>Product Review</legend>
+
+            <label for="product-name">Product Name:</label>
+            <select id="product-name" name="product-name" required>
+                <option value="" selected disabled>Select a Product</option>
+                <option value="cakes" >Cakes</option>
+                <option value="food-tray" >Food Tray</option>
+                <option value="surprises" >Surprise Packages</option>
+                <option value="teddy-bears">Teddy-Bears</option>
+            </select>
+            <br><br>
+
+            <label for="rating">Overall Rating:</label>
+            <div id="rating">
+            <div class="star-group">
+                <label for="rating1">☆</label>
+                <input type="radio" id="rating1" name="rating" value="1" required>
+            </div>
+            <div class="star-group">
+                <label for="rating2">☆☆</label>
+                <input type="radio" id="rating2" name="rating" value="2" required>
+            </div>
+            <div class="star-group">
+                <label for="rating3">☆☆☆</label>
+                <input type="radio" id="rating3" name="rating" value="3" required>
+            </div>
+            <div class="star-group">
+                <label for="rating4">☆☆☆☆</label>
+                <input type="radio" id="rating4" name="rating" value="4" required>
+            </div>
+            <div class="star-group">
+                <label for="rating5">☆☆☆☆☆</label>
+                <input type="radio" id="rating5" name="rating" value="5" required>
+            </div>
+            </div>
+
+            <br><br>
+
+            <label for="installation-date">Date of Installation:</label>
+            <input type="date" id="installation-date" name="installation-date" required>
+            <br><br>
+
+            <label>Which features did you find most useful?<br>(Check all that apply)</label><br>
+
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="feature1" name="features" value="Feature 1"> Cake Design</label>
+                <label><input type="checkbox" id="feature2" name="features" value="Feature 2"> Food Taste</label>
+                <label><input type="checkbox" id="feature3" name="features" value="Feature 3">Delivery Service</label>
+                <label><input type="checkbox" id="feature4" name="features" value="Feature 4">Customer Service</label>
+            </div>
+
+           
+            <label for="review">Written Review (Optional):</label><br>
+            <textarea id="review" name="review"></textarea>
+            <br><br>
+
+            <label for="user-name">Your Name (Optional):</label>
+            <input type="text" id="user-name" name="user-name">
+            <br><br>
+
+            <input type="submit" value="Submit Review">
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>©<span id ="currentyear"></span> ❤Iruoghene Omarayeirue 🤍Nigeria</p>
+        <p id ="lastModified"></p>
+    </footer>
+</body>
+</html>

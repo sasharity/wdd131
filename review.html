@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confirmation page for product review submission">
+    <meta name="author" content="Your Name">
+    <title>Review Confirmation</title>
+</head>
+<body>
+    <header>
+        <h1>Review Confirmation</h1>
+    </header>
+
+    <section>
+        <h2>Your Review Details</h2>
+        <p><strong>Product Name:</strong> <span id="product-name-review"></span></p>
+        <p><strong>Rating:</strong> <span id="rating-review"></span></p>
+        <p><strong>Installation Date:</strong> <span id="installation-date-review"></span></p>
+        <p><strong>Useful Features:</strong> <span id="features-review"></span></p>
+        <p><strong>Written Review:</strong> <span id="review-text"></span></p>
+        <p><strong>User Name:</strong> <span id="user-name-review"></span></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('product-name-review').textContent = urlParams.get('product-name');
+        document.getElementById('rating-review').textContent = urlParams.get('rating');
+        document.getElementById('installation-date-review').textContent = urlParams.get('installation-date');
+        document.getElementById('features-review').textContent = urlParams.get('features');
+        document.getElementById('review-text').textContent = urlParams.get('review');
+        document.getElementById('user-name-review').textContent = urlParams.get('user-name');
+
+        // Update review count
+        let reviewCount = localStorage.getItem('reviewCount') || 0;
+        reviewCount++;
+        localStorage.setItem('reviewCount', reviewCount);
+        alert('Total reviews submitted: ' + reviewCount);
+    </script>
+</body>
+</html>
