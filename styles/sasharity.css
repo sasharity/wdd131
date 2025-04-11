@@ -1,0 +1,133 @@
+:root {
+    --baby-pink: #ffc0cb;
+    --black: #000000;
+    --white: #ffffff;
+    --font-family: 'Poppins', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Header & Navigation */
+  header {
+    background-color: rgb(39, 13, 37);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--baby-pink);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav a {
+    color: var(--black);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('images/hero.webp') center/cover no-repeat;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--baby-pink); /* fallback color */
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+  }
+  
+  /* CTA Button */
+  button.cta {
+    background-color: var(--black);
+    color: var(--baby-pink);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  button.cta:hover {
+    background-color: #222;
+  }
+  
+  /* Features / Cards / Grid Section */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fff5f7;
+  }
+  
+  .feature-card {
+    border: 1px solid var(--baby-pink);
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: var(--white);
+    text-align: center;
+  }
+  
+  .feature-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--black);
+    color: var(--baby-pink);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: var(--baby-pink);
+    text-decoration: underline;
+  }
+  
+  /* Responsive Adjustments */
+  @media (min-width: 768px) {
+    .hero h1 {
+      font-size: 3rem;
+    }
+  
+    nav {
+      justify-content: space-around;
+    }
+  }
+  

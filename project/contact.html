@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sasharity Cakes and Surprises - Custom cakes and surprise gifts in Lagos" />
+    <meta name="author" content="Iruoghene Sasha Omarayeirue">
+    <title>Contact Us | Sasharity Cakes & Surprises</title>
+    <link rel="stylesheet" href="/wdd131/styles/sasharity.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <script src="/wdd131/scripts/sasharity.js" defer></script>
+    <script src="/wdd131/scripts/getdates.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Sasharity Cakes & Surprises</h1>
+    <p id="greeting">Let's Get in Touch!</p>
+  </header>
+
+  <nav>
+    <a href="sasharity.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <main style="padding: 2rem;">
+    <h2 style="text-align: center; margin-bottom: 1rem;">Send Us a Message 💌</h2>
+
+    <form id="contactForm" style="max-width: 500px; margin: 0 auto;">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required /><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required /><br>
+
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject" required>
+        <option value="">-- Please Choose an Option --</option>
+        <option value="order">Order a Cake</option>
+        <option value="surprise">Book a Surprise Package</option>
+        <option value="general">General Inquiry</option>
+      </select><br>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea><br>
+
+      <button type="submit" class="cta" style="margin-top: 1rem;">Send Message</button>
+    </form>
+
+    <div id="confirmation" style="text-align: center; margin-top: 2rem; color: green; display: none;">
+      🎉 Thank you! We’ll get back to you as soon as possible.
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Sasharity Cakes & Surprises | Last Updated: <span id="lastModified"></span></p>
+    <p><a href="references.html">References & Image Credits</a></p>
+  </footer>
+
+</body>
+</html>
